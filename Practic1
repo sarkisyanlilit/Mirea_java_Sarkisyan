@@ -1,0 +1,82 @@
+public class task1{
+public static void main(String[] agr)
+{
+int myArr[]={8, 13,2, 9, 15,21,1, 11, 6, 7};
+int sum=0;
+for (int i=0; i<myArr.length; i++)
+{
+sum+=myArr[i];
+System.out.println(sum);
+}
+System.out.println("\nsum= "+ sum);
+}
+}
+ 
+ 
+ 
+public class task2 {
+public static void main(String[] agr)
+{
+int n=10;
+double G=0, sum=0;
+for (int i=1;i<=n; i++)
+{
+G+=1./i;
+System.out.println(G);
+sum+=G;
+
+}
+System.out.println("\nsum= "+ sum);
+}
+}
+ 
+ 
+ 
+ 
+public class task3 {
+public static void main(String[] agr) {
+int[] arr;
+arr = new int[10];
+
+
+for (int i = 0; i < arr.length; i++) {
+arr[i] = ((int) (Math.random() * 201-100));
+
+System.out.println(arr[i]);
+}
+System.out.print("\n");
+for (int i = 0; i < arr.length - 1; i++) {
+
+for (int j = i + 1; j < arr.length; j++) {
+
+if (arr[j] < arr[i]) {
+int temp = arr[j];
+arr[j] = arr[i];
+arr[i] = temp;
+}
+}
+}
+for (int i = 0; i < arr.length; i++) {
+System.out.print(arr[i] + " ");
+}
+}
+}
+
+
+
+ 
+import java.util.Scanner;
+public class task4 {
+public static void main(String[] agr)
+{
+int f=1;
+Scanner in = new Scanner(System.in);
+System.out.print("Input a number: ");
+int num = in.nextInt();
+for (int i=1; i<=num; i++)
+{
+f*=i;
+}
+System.out.println("\nfactorial= "+f);
+}
+}
