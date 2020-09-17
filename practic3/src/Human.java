@@ -31,7 +31,7 @@ public class Human {
         {
             this.hair_color=hair_color;
         }
-        public void  setHead_size( String size)
+        public void  setSize( String size)
         {
             this.size=size;
         }
